@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        h1 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        /* content.css content */
+        .dh-highlight {
+            mix-blend-mode: multiply;
+            opacity: 0.7;
+            cursor: pointer;
+            border-bottom: 1px solid transparent;
+        }
+
+        .dh-highlight:hover {
+            opacity: 1;
+        }
+
+        .dh-menu-container {
+            position: absolute;
+            z-index: 2147483647;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 6px;
+            font-family: sans-serif;
+            border-radius: 50px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .dh-color-circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            transition: transform 0.1s;
+            flex-shrink: 0;
+        }
+
+        .dh-menu-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            color: #555;
+        }
+
+        .dh-menu-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .dh-divider {
+            width: 1px;
+            height: 16px;
+            background: #eee;
+            margin: 0 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The Future of Digital Knowledge</h1>
+    <div class="meta">By Sarah Connor • Dec 19, 2025</div>
+
+    <p>
+        In the age of information abundance, the ability to <span class="dh-highlight"
+            style="background-color: #f59e0b;">capture, organize, and synthesize knowledge is more critical than
+            ever</span>. We are no longer just consumers of content; we are active participants in a global
+        conversation.
+    </p>
+
+    <p>
+        Traditional bookmarking tools are insufficient. They save links, but they don't save context. <span
+            class="dh-highlight" style="background-color: #10b981;">What we need are tools that allow us to interact
+            with the text directly</span>, highlighting key passages and adding our own thoughts in the margins.
+    </p>
+
+    <p>
+        This is where modern browser extensions come into play. They transform the static web into a dynamic canvas for
+        thought. <span class="dh-highlight" style="background-color: #3b82f6;">By overlaying a layer of personal meaning
+            onto public information</span>, we create a unique knowledge graph that reflects our own understanding of
+        the world.
+    </p>
+
+    <!-- Simulated Floating Menu -->
+    <div class="dh-menu-container" style="top: 280px; left: 450px;">
+        <div class="dh-color-circle" style="background-color: #f59e0b;"></div>
+        <div class="dh-color-circle" style="background-color: #10b981;"></div>
+        <div class="dh-color-circle" style="background-color: #3b82f6;"></div>
+        <div class="dh-color-circle" style="background-color: #ef4444;"></div>
+        <div class="dh-divider"></div>
+        <button class="dh-menu-btn">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+            </svg>
+        </button>
+        <button class="dh-menu-btn">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+        </button>
+    </div>
+
+</body>
+
+</html>
